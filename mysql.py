@@ -23,7 +23,7 @@ df = pd.read_sql('SELECT * FROM ml_workshop.salary_data', con=engine)
 
 print(df)
 
-X = df['Year']
+X = df[['Year']]
 y = df['Salary']
 
 # Split the data into training and testing sets
